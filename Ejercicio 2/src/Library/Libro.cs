@@ -4,7 +4,10 @@ namespace SRP
 {
     public class Libro
     {
-
+        /*
+        El anterior comentario no era correcto.
+        No he podido encontra el error en este ejercicio, creo que cumple con SRP y Expert.
+        */
         public string Titulo { get ; }
         public string Autor { get ; }
         public string Codigo { get ;  }
