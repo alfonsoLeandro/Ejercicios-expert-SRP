@@ -9,6 +9,11 @@ namespace Expert_SRP
             Double pesos = ConvertirAPesos(dinero, moneda);
             return pesos >= a.PrecioDulce + a.PrecioMasa;
         }
+
+        /*
+        Esto no deberia estar aqui sino en una clase aparte.
+        No cumple con SRP ya que Kiosco tambien tiene la responsabilidad de convertir entre monedas.
+        */
         private Double ConvertirAPesos(Double dinero, String moneda)
         {
             if (moneda.Equals("U$S")) 
